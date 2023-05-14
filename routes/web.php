@@ -21,7 +21,7 @@ Route::get('/upload', UploadPhoto::class)->middleware('auth')->name('upload.phot
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/upload');
 });
 
 Route::middleware([
